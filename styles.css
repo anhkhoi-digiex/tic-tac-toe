@@ -1,0 +1,59 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+
+.bigbox {
+    width: 300px;
+    display: none;
+    box-shadow: 0px 0px 0px 1px;
+    margin-bottom: 10px;
+}
+
+.coverbox {
+    display: flex;
+}
+
+.user_section {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.user_section div {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.user_section div:hover {
+    background-color: rgb(94, 159, 180);
+    cursor: pointer;
+}
+
+.restartBtn{
+    display: none;
+}
