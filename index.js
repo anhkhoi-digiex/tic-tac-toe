@@ -9,7 +9,6 @@ const bigbox = document.querySelector(".bigbox");
 const restartBtn = document.querySelector(".restartBtn");
 restartBtn.addEventListener("click", () => {
     boxes.forEach((box) => {
-        // console.log(box.getAttribute("itemid"));
         box.innerHTML = ""
         title.innerHTML = "Please choose users"
         bigbox.style.display = "none"
@@ -59,7 +58,6 @@ function choosePlayer() {
 function initializeGame() {
     if (boxes != undefined && running == true) {
         boxes.forEach((box) => {
-            // console.log(box.getAttribute("itemid"));
             box.addEventListener("click", (e) => {
                 if (box.innerHTML != "") {
                     return;
@@ -98,7 +96,6 @@ function checkWinner() {
             document.getElementById(conditionWin[index][1]).innerText == user &&
             document.getElementById(conditionWin[index][2]).innerText == user
         ) {
-            console.log(typeof document.getElementById(conditionWin[index][0]).innerHTML);
             running = false
             title.innerHTML = `Chúc mừng người chơi ${user} thắng`
             restartBtn.style.display = "block"
